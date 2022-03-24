@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# BlueHealth React Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Welcome to the programming exercise for React Frontend Developers! :)
+
+## Your Task
+
+// TODO
+
+## Get Started
+
+1. Install [node.js](https://nodejs.org/en/) and the [Yarn](https://yarnpkg.com/getting-started/install) package manager.
+2. After cloning the repository, run `yarn` in its root to install all dependencies and set up the git hooks.
+3. _Optional: Configure VSCode as described in "Editor Setup" below._
+4. Start the application using `yarn start`. Happy coding!
+
+_Note: See "Available Scripts" below for more information._
+
+### File Structure
+
+All files should be named in `lower-case-with-dashes.ts`. There is no exception in casing for files holding a component.<br />
+TypeScript files (usually `.ts`) using React's JSX syntax should receive a `.tsx` file extension.
+
+The contents of this repo are structured in the following way:
+
+- `.vscode/`: [VSCode](https://code.visualstudio.com/) config
+- `build/`: Build artifacts (excluded from version control)
+- `src/`: The application's source files
+  - `app/`: The app's entry point
+  - `components/`: Application-specific React components that do not hook into the application store
+  - `i18n/`: Internationalization helpers & translations
+  - `models/`: [MobX](https://mobx.js.org) models
+  - `screens/`: All application screens accessible via their own route/as part of the navigation hierarchy
+  - `theme/`: The UI theme
 
 ## Available Scripts
 
-In the project directory, you can run:
+The most important scripts are outlined below. You can find all script definitions in the `package.json`.
 
-### `npm start`
+### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Launches a development server that runs the application in development mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After running this command, navigate to [http://localhost:4200](http://localhost:4200) to view the app in your browser.<br />
+The app will automatically reload if you change any of the source files.
 
-### `npm test`
+### `yarn format`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs automated code formatting on all applicable file types.
 
-### `npm run build`
+### `yarn lint`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Lints all applicable files and prints the output.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `yarn compile`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dry-runs the TypeScript compiler.<br />
+This is especially useful to check whether any types or references broke after a big refactoring.
 
-### `npm run eject`
+### `yarn test`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Runs unit tests via [Jest](https://jestjs.io).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Tests are automatically discovered from all `*.spec.{ts,tsx}` files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `yarn storybook`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Launches [Storybook](https://storybook.js.org/).
 
-## Learn More
+Stories are automatically added from all `*.stories.{ts,tsx}` files.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `yarn build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds the application.<br />
+The build artifacts will be stored in the `build/` directory.
+
+## Editor Setup
+
+We recommend using [VSCode](https://code.visualstudio.com/).
+
+After opening the repo in VSCode, it will ask you if you want to install recommend extensions. For a seamless development experience, we recommend accepting.
