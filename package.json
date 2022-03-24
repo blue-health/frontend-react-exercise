@@ -34,7 +34,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "up:dev": "json-server --watch db.json"
   },
   "eslintConfig": {
     "extends": [
@@ -88,6 +89,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.5.7",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "json-server": "^0.17.0",
     "prettier": "^2.6.0",
     "webpack": "^5.70.0"
   }

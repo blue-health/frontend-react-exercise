@@ -4,6 +4,7 @@ import { useStore } from "../app/root-store";
 import { H1, Screen } from "../components";
 
 export const HomeScreen = observer(() => {
+  // eslint-disable-next-line unused-imports/no-unused-vars
   const store = useStore();
 
   return (
