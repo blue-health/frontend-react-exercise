@@ -56,6 +56,17 @@
         ]
       }
     ],
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external", "internal"]],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        },
+        "warnOnUnassignedImports": false
+      }
+    ],
     "import/prefer-default-export": "off",
 
     "@typescript-eslint/explicit-module-boundary-types": "warn",
@@ -165,7 +176,9 @@
     "react/static-property-placement": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+
+    "storybook/prefer-pascal-case": "off"
   },
   "settings": {
     "import/resolver": {

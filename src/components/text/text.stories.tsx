@@ -10,7 +10,6 @@ import {
   SmallText,
   Text,
 } from "./text";
-
 import type { LinkProps, TextProps } from "./text.props";
 
 export default {
