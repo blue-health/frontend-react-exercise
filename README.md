@@ -22,7 +22,7 @@ In the process, you should:
 - Develop a reusable button component, styling it using [styled-components](https://styled-components.com/)
 - Implement your state management and request logic by extending the `RootStore`. Use [MobX](https://mobx.js.org) where applicable
 - Assemble the screen(s) in the Figma design and bring them to live using your logic
-- Optional: Use [Axios](https://axios-http.com/docs/intro) [React Query](https://react-query.tanstack.com/) to fetch the API data
+- Optional: Use [Axios](https://axios-http.com/docs/intro) and [React Query](https://react-query.tanstack.com/) to fetch the API data
   - If you do not use Axios and React Query, pick a fitting alternative
 
 In general, this exercise is not about developing a functionally complete solution. Our primary focus in evaluating it is the quality of your code and architecture. Your goal should be to get whatever you implement as close as possible to a production-ready state.
